@@ -39,24 +39,24 @@ body {
     margin: 0 auto;
 }
 html, body {
-  height: 100%;
+	height: 100%;
 }
 p {
     letter-spacing: 0px;
 }
 h2,
 h3 {
-  text-transform: uppercase;
-  font-size: 1rem;
+	text-transform: uppercase;
+	font-size: 1rem;
 }
 
 /* header */
 .svg-curve1 {
-  display: inline-block;
-  position: absolute;
-  top: -60px;
-  left: 0;
-  z-index: -1;
+	display: inline-block;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	z-index: -1;
 }
 
 .svg-curve2 {
@@ -309,3 +309,243 @@ svg.svg-bottom-curve2{
   z-index: 1;
 }
 /* footer end */
+@media(max-width: 1024px){
+	.svg-curve1 {
+	  display: inline-block;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: -1;
+	}
+	
+	.svg-curve2 {
+	  display: inline-block;
+	  position: absolute;
+	  top: 5;
+	  left: 0;
+	  z-index: -1;
+	}
+	
+	.header img {
+	  position: relative;
+	  display: inline-block;
+	  width: 100%;
+	  height: 24vh;
+	  object-fit: cover;
+	  z-index: -2;
+	  overflow: hidden;
+	}
+  }
+  
+  @media(max-width: 768px) {
+	/* curve */
+	.svg-curve2 {
+	  display: inline-block;
+	  position: absolute;
+	  top: 80px;
+	  left: 0;
+	  z-index: -1;
+	}
+	/* end curve */
+	.wrapper {
+	  margin: 0 auto;
+	  width: 100%;
+	}
+	/*
+	/* container1 */
+	.container1 {
+	  display: flex;
+	  flex-direction: column;
+	  flex: 1 0 auto;
+	  width: 40%;
+	}
+	
+	ul.menu {
+	  margin: 0%;
+	  padding: 4%;
+	}
+	ul.menu li {
+	  border: 1px solid rgb(179, 174, 174);
+	}
+	ul.menu li {
+	  margin: 1% 6%;
+	  padding: 5% 3%;
+	  text-align: justify;
+	  border-radius: 5px;
+	  font-weight: bold;
+	}
+	
+	div.head-logo {
+	  margin: 10% auto;
+	  padding: 0% 9%;
+	  color: rgb(255, 0, 140);
+	}
+	/* end container1 */
+	/* container2 */
+	section.container2.clearfix {
+	  flex-direction: column;
+	  margin: 4% 1%;
+	  padding: 2%;
+	  width: 100%;
+	}
+	div.menu-bar.clearfix {
+	  margin: 0%;
+	  padding: 0%;
+	}
+	/* end container2 */
+	/* footer */
+	div.woman-pic {
+	  width: 55%;
+	  object-fit: contain;
+	  position: absolute;
+	  bottom: -1px;
+	  right: 0px;
+	  z-index: 222;
+	}
+	div.woman-pic img {
+	  width: 100%;
+	  transform: rotate(0deg);
+	  object-fit: contain;
+	}
+	.services-container{
+	  width: 100%;
+	  margin: 3%;
+	}
+	.social-container{
+	  margin: 3%;
+	}
+	footer {
+	  height: 30vh;
+	}
+  }
+  @media(max-width: 420px) {
+	
+	/* header */
+	.svg-curve1 {
+	  display: inline-block;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: -1;
+	}
+	
+	.svg-curve2 {
+	  display: inline-block;
+	  position: absolute;
+	  top: 5;
+	  left: 0;
+	  z-index: -1;
+	}
+	
+	.header img {
+	  position: relative;
+	  display: inline-block;
+	  width: 100%;
+	  min-height: 25vh;
+	  object-fit: cover;
+	  z-index: -2;
+	  overflow: hidden;
+	}
+	/* header end */
+	/* wrapper */
+	.wrapper {
+	  margin: 0 auto;
+	  flex-direction: column;
+	  width: 90%;
+	}
+	/* container1 */
+	.container1 {
+	  width: auto;
+	}
+	ul.menu {
+	  margin: 1%;
+	  padding: 2%;
+	}
+	ul.menu li {
+	  border: 1px solid rgb(179, 174, 174);
+	}
+	ul.menu li {
+	  margin: 1% auto;
+	  padding: 1% 10%;
+	  text-align: justify;
+	  border-radius: 5px;
+	  font-weight: bold;
+	}
+	/* container1 end */
+	/* container2 */
+	section.container2.clearfix {
+	  flex-direction: column;
+	  margin: 1%;
+	  padding: 2%;
+	  width: 100%;
+	}
+	div.menu-bar.clearfix {
+	  margin: 0 auto;
+	  padding: 0%;
+	}
+	/* container2 end */
+	/* wrapper end */
+	/* footer */
+	footer {
+	  flex-direction: row;
+	  font-size: 0.6rem;
+	  height: 30vh;
+	}
+	.social-container, .services-container {
+	  margin: 10% 5% ;
+	  padding: 0%;
+	}
+	.social-container{
+	  width: 20%;
+	}
+	.services-container{
+	  width: 80%;
+	}
+	.icons span i,
+	h3 {
+	  color: rgb(255, 0, 140);
+	}
+	.icons{
+	  margin: 0;
+	  padding: 0;
+	}
+	.data-container{
+	  flex-direction: row;
+	  width: 100%;
+	  margin: 0%;
+	}
+	ul.service-list, ul.service-list.li h3{
+	  padding: 0;
+	  margin: 0;
+	}
+	/* curve */
+	svg.svg-bottom-curve1{
+	  display: inline-block;
+	  width: 100%;
+	  margin-bottom: -10px;
+	  position: absolute;
+	  top: -3px;
+	  left: 0;
+	  z-index: 1;
+	}
+	/* curve end */
+  /* woman image */
+	div.woman-pic {
+	  width: 50%;
+	  transform: rotate(0deg);
+	  object-fit: contain;
+	  position: absolute;
+	  bottom: 0px;
+	  right: 0px;
+	  z-index: 222;
+	}
+	div.woman-pic img {
+	  width: 100%;
+	  transform: rotate(0deg);
+	  object-fit: contain;
+	}
+	/* woman image end */
+	
+	/* footer end */
+  
+  }
